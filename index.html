@@ -165,26 +165,6 @@ top:34px
 </div>
 </div>
 </body>
-<?php
-if(isset($_POST['button'])){
-	#echo "done";
-	$name=$_POST['name'];
-	$email=$_POST['email'];
-	$contact=$_POST['contact'];
-	$feed=$_POST['feedback'];
 
-	$database=mysqli_connect('localhost','root','','feedback');
-	if ($database) {
-		#echo "done";
-	}
-
-	$query="INSERT INTO `contact`(`name`, `mail`, `contact`, `feedback`) VALUES ('$name','$email','$contact','$feed')";
-	$INSERT=mysqli_query($database,$query);
-	if ($INSERT) {
-		#echo "done";
-	}
-}
-
-?>
 </body>
 </html>
